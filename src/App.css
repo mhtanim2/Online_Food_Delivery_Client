@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #17b693;
+  --tartiary-color: #ffffff;
+  --tarnary-color: #13678a;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: var(--tartiary-color);
+}
+h1 {
+  font-size: 42px;
+  color: var(--tartiary-color);
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 45px;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 40px;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  color: var(--tartiary-color);
+  background-color: var(--tarnary-color);
+  font-weight: 500;
+  font-size: 16px;
+}
+.btn:hover {
+  color: var(--primary-color) !important;
+  background-color: #90cce5;
+}
+.signin-area .btn:focus-visible {
+  color: var(--bs-btn-hover-color);
+  background-color: #90cce5;
+  border-color: var(--bs-btn-hover-border-color);
+  outline: 0;
+  box-shadow: var(--bs-btn-focus-box-shadow);
+}
+/* global css for slick slider  */
+.slick-track {
+  display: flex !important;
+  margin-top: 1px;
+  margin-right: auto !important;
+  /* margin-left: 5px !important; */
+  gap: 5px;
+}
+/* .slick-prev,
+.slick-next {
+  display: none !important;
+} */
+/* global css for slick slider end */
+
+/* ==========Menu bar css start here====== */
+.header {
+  position: relative;
+}
+.signin-area .text-right {
+  display: inline-block;
+  background-color: #17b693;
+  color: #ffffff;
+  padding: 3px 10px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.signin-area {
+  float: right;
+}
+
+.main-menu ul li a {
+  color: var(--primary-color);
+}
+.location svg,
+.main-menu svg {
+  font-size: 14px;
+}
+
+/* menu item dropdown  */
+svg {
+  font-size: 14px;
+}
+
+.main-menu ul li {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.categories {
+  position: absolute;
+  top: 0px;
+  left: -0px;
+  z-index: 0;
+  background-image: none;
+  background: #fff;
+  padding: 20px 20px 15px 20px;
+  border: 1px solid #00000047;
+  border-radius: 7px;
+  box-shadow: rgba(100, 116, 139, 0.12) 0px 10px 15px;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s linear;
+  width: 450px;
+  transform: scale(0.8, 0.8);
+}
+.main-menu .categorie-link:hover > .categories,
+.categories:hover {
+  top: 40px;
+  left: 30px;
+  visibility: visible;
+  z-index: 99;
+  width: 450px;
+  height: auto;
+  pointer-events: auto;
+  transition: all 0.3s linear;
+  transform: scale(1, 1);
+}
+.category-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 6px 10px;
+}
+
+.category-item:hover {
+  background-color: #90cce5;
+}
+
+.category-item img {
+  width: 35px;
+  height: 35px;
+  background-color: var(--secondary-color);
+  padding: 5px;
+}
+
+.category-item h3 {
+  font-size: 18px;
+  color: rgb(117, 133, 144);
+}
+/* menu item dropdown end  */
+
+/* ======== Main page hero ess start ======== */
+.hero {
+  padding: 70px 0 50px 0;
+  background-image: url("http://localhost:3000/images/mainhero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 15px;
+  color: #4b4542;
+}
+
+.hero .input-group {
+  padding: 20px;
+  background: #13678a;
+  border-radius: 0;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.hero .input-group input.form-control {
+  border-radius: 0;
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+}
+
+.hero .input-group-text {
+  background: #fff;
+  color: var(--secondary-color);
+}
+
+.h-category-img {
+  width: 100%;
+  height: 120px;
+  max-width: 120px;
+}
+@media (max-width: 649.95px) {
+  .h-category-img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.h-category-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.h-category-img img:hover {
+  transform: scale(1.1);
+}
+
+.h-category-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.h-category-item p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+.category .slick-track {
+  display: flex !important;
+  margin-top: 1px;
+  margin-right: auto !important;
+  gap: 5px;
+}
+.h-category-item .slick-slider {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+/* ======== Main page hero ess end ======== */
+/* ======== Main page cagegory css start ======== */
+.menu-item-container {
+  background-color: var(--tarnary-color);
+  padding: 23px 23px 23px 23px;
+}
+.card-item {
+  position: relative;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: rgba(100, 116, 139, 0.06) 0px 1px 1px,
+    rgba(100, 116, 139, 0.1) 0px 1px 2px;
+  border: none;
+  cursor: pointer;
+}
+.card-item .slick-list {
+  overflow: hidden;
+  padding: 0;
+}
+
+.discount-box {
+  position: absolute;
+  display: inline-block;
+  background-color: var(--secondary-color);
+  top: 10%;
+  left: 6%;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 2px;
+  z-index: 99;
+}
+.card-top {
+  max-height: 170px;
+  overflow: hidden;
+}
+.card-item .card-item-img {
+  transition: all 0.3s linear;
+}
+.card-item .card-item-img div {
+  height: 170px;
+  width: 100%;
+}
+.card-item .card-item-img div img {
+  width: 100%;
+  height: 100%;
+}
+.card-item .card-item-img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
+.card-item .card-body {
+  padding: 5px;
+  margin-top: 10px;
+}
+.card-item .card-body h5 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.card-item .card-body .cosine {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(75, 88, 100);
+}
+
+.card .price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-top: 5px;
+}
+.card .actual-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b4542;
+  text-decoration: line-through;
+}
+.card svg {
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+.menu-item-container:hover > .slide-overlay {
+  display: flex;
+}
+.slide-overlay {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 69px;
+  height: 100%;
+  background: linear-gradient(
+    270deg,
+    rgb(33, 43, 54) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  opacity: 0.3;
+  left: unset;
+  right: 0px;
+  top: 0.2%;
+  border-radius: 0px 4px 4px 0px;
+  z-index: 1;
+}
+
+/* ======== Main page lets connect css end ======== */
+.lets-connect {
+  background-color: var(--tarnary-color);
+  padding: 70px 0;
+  color: #fff;
+}
+.lets-connect h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+.lets-connect p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #d8d6d1;
+}
+.lets-connect input {
+  padding: 10px 15px;
+}
+.lets-connect span#basic-addon1 {
+  background: var(--secondary-color);
+}
+
+/* ======== Login Modal ======== */
+.custom-modal {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  border: 0;
+  background: #000000b3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.h-40 {
+  height: 40px;
+}
+.close-btn.position-absolute.right-0 {
+  right: 15px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.custom-modal .features-login-form {
+  width: 370px;
+}
+
+/* ==========Banner css start here====== */
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  background-color: #73737373;
+  color: #fff;
+}
+.banner-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.search-area .form-control {
+  height: 35px;
+}
+.search-area .input-group-text {
+  height: 35px;
+  color: #fff;
+  background-color: #17b693;
+  border: none;
+}
+
+.search-area {
+  background: #13678a;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.pick-btn {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #17b693;
+  border-radius: 8px;
+  padding: 5px;
+  width: 130px;
+  text-align: center;
+}
+
+/* ==========Footer css start here====== */
+.footer-section {
+  background-color: #141313;
+  color: #fff;
+}
+.footer-logo p img {
+  width: 30px;
+}
+.footer-link-area {
+  justify-content: space-between;
+}
+.footer-link-area ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link-area ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 0;
+  display: block;
+}
+.copyrigth-area p {
+  font-size: 12px;
+}
+
+.delivery-section {
+  text-align: center;
+}
+.delivery-section img {
+  height: 150px;
+  margin-bottom: 20px;
+}
+.delivery-section p {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.delivery-section + img.position-absolute {
+  top: 20%;
+  left: 50%;
+}
+
+@media (min-width: 1400px) {
+  .story_rights p {
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  .story_rights h4 {
+    font-size: 38px;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .success_content {
+    padding: 5px 0 0 50px;
+  }
+  .success_content p {
+    font-size: 14px;
+  }
+  .success_icon {
+    margin: 10px 30px 0 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  a {
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card .price {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-top: 5px;
+  }
+}
